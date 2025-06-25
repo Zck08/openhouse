@@ -1,0 +1,176 @@
+<html lang="es">
+<head>
+    <title>Matrícula CTP Calle Blancos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link href="../../Grafica/image/logo.png" rel="icon">
+    <link href="../../Grafica/image/logo.png" rel="apple-touch-icon">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166781784-10"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-166781784-10');
+    </script>
+    <style>
+        html {
+            min-height: 100%;
+            position: relative;
+        }
+        body {
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            color: white;
+        }
+        .login-logo{
+            position: relative;
+            margin-left: -41.5%;
+        }
+        .login-logo img{
+            position: absolute;
+            width: 20%;
+            margin-top: 19%;
+            background: #282726;
+            border-radius: 4.5rem;
+            padding: 5%;
+        }
+        .login-form-1{
+            padding: 9%;
+            background:#282726;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+        }
+        .login-form-1 h3{
+            text-align: center;
+            margin-bottom:12%;
+            color:#fff;
+        }
+        .login-form-2{
+            padding: 9%;
+            background: #25589e;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+        }
+        .login-form-2 h3{
+            text-align: center;
+            margin-bottom:12%;
+            color: #fff;
+        }
+        .btnSubmit{
+            font-weight: 600;
+            width: 50%;
+            color: #282726;
+            background-color: #fff;
+            border: none;
+            border-radius: 1.5rem;
+            padding:2%;
+        }
+        .btnForgetPwd{
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .btnForgetPwd:hover{
+            text-decoration:none;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+            <div class="row  text-center p-4">
+                <div class="col-md-12">
+                    <img src="logot.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+    <div class="container-fluid">
+        <div class="container pt-2 pb-5">
+            <div class="row">
+                    <div class="col-md-6 login-form-1">
+                        <h3>Admisión</h3>
+                        <p class="text-white">Formulario para poder optar por un espacio en el curso lectivo 2025</p>
+
+                        <div class="form-group text-center pt-5">
+                            <button disabled  type="button" class="btnSubmit">
+                                <i class="fas fa-sun"></i>
+                                Diurno
+                            </button>
+                        </div>
+                    </div>
+            <div class="col-md-6 login-form-2">
+
+                <!-- Mensajes flash de Flask -->
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    <div class="container pt-3">
+                      <div class="alert alert-info text-center" role="alert">
+                        {% for message in messages %}
+                          {{ message }}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endwith %}
+
+                <form action="/enviar" method="post">
+                    
+                    <h3>Ingreso para solicitantes</h3>
+                    <p class="text-white">Ingresa para poder ver el estado del proceso de admisión para ingresar al CTP Calle Blancos</p>
+
+                    <div class="input-group input-group-lg p-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                        </div>
+                        <input type="email" name="ced" placeholder="Correo Electrónico" class="form-control" required>
+                    </div>
+
+                    <div class="input-group input-group-lg p-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="pass" placeholder="Contraseña" class="form-control" required>
+                    </div>
+
+                    <div class="form-group text-center pt-3">
+                        <input type="submit" class="btnSubmit" value="Aceptar" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+<br><br>
+        <footer>
+            <div class="container">
+                <div class="text-center p-2">
+                    <a href="https://sacompcr.com" target="_blank"  style="text-decoration:none;color:black;">
+                        <span>Copyright &copy; SAComp Consultores Informáticos 2022</span>
+                    </a>
+              </div>
+            </div>
+        </footer>
+</body>
+</html>
