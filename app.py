@@ -9,7 +9,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'admision.ctp.calleblancos@gmail.com'  # tu correo Gmail
-app.config['MAIL_PASSWORD'] = 'zwen snhx hakh nxyb'  # contraseña de aplicación (no la normal)
+app.config['MAIL_PASSWORD'] = 'fgyrgjifauusfaix'  # contraseña de aplicación (no la normal)
 
 mail = Mail(app)
 
