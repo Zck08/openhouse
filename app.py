@@ -15,7 +15,7 @@ mail = Mail(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')  # asegúrate que este archivo esté en la carpeta /templates
+    return render_template('Redes.html')  # asegúrate que este archivo esté en la carpeta /templates
 
 @app.route('/enviar', methods=['POST'])
 def enviar():
