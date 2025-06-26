@@ -35,7 +35,7 @@ def enviar():
     mensaje_html = f"""
     <html>
       <body style="font-family: Arial, sans-serif; color: #333;">
-        <h2 style="color: #2E86C1;">¡Bienvenido/a a CTP Calle Blancos!</h2>
+        <h2 style="color: #2E86C1;">Bienvenido/a a CTP Calle Blancos</h2>
         <p>Gracias por registrarte. Estamos encantados de tenerte con nosotros.</p>
     
         <p><strong>Estos son tus datos de acceso:</strong><br>
