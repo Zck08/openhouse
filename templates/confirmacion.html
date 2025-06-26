@@ -4,22 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Hacking Matrix Rain Effect</title>
+  <title>Matrix Loading Effect</title>
   <style>
-    * {
+    html, body {
+      width: 100%;
+      height: 100%;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      box-sizing: border-box;
-    }
-
-    body {
       background: #111;
-      color: rgb(255, 255, 255);
       font-family: Consolas, Courier, monospace;
-      font-size: 60px;
-      text-shadow: 0 0 30px rgba(23, 253, 2, 0.788);
-      height: 100%;
     }
 
     #loading {
@@ -28,12 +22,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+      font-size: clamp(24px, 10vw, 60px);
+      color: #411;
+      text-shadow: 0 0 15px #411;
       z-index: 2;
     }
 
     .glow {
-      color: rgb(255, 255, 255);
-      text-shadow: 0px 0px 10px (0, 177, 38);
+      color: #f00;
+      text-shadow: 0px 0px 10px #f00;
     }
 
     span {
@@ -46,50 +43,57 @@
       top: 0;
       left: 0;
       z-index: 1;
+      width: 100vw;
+      height: 100vh;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div id="loading">!CUIDADO!<br>NO CONFIE EN TODOS LOS LINKS</div>
+  <div id="loading">LOADING</div>
   <canvas id="canvas"></canvas>
 
-  <!-- MATRIX RAIN -->
   <script>
-    var canvas = document.getElementById('canvas');
-    var context = canvas.getContext('2d');
-    var W = window.innerWidth;
-    var H = window.innerHeight;
+    let canvas = document.getElementById('canvas');
+    let context = canvas.getContext('2d');
+    let fontSize = 16;
+    let columns, drops, W, H;
 
-    canvas.width = W;
-    canvas.height = H;
-
-    var fontSize = 16;
-    var columns = Math.floor(W / fontSize);
-    var drops = [];
-    for (var i = 0; i < columns; i++) {
-      drops.push(0);
+    function resizeCanvas() {
+      W = window.innerWidth;
+      H = window.innerHeight;
+      canvas.width = W;
+      canvas.height = H;
+      columns = Math.floor(W / fontSize);
+      drops = [];
+      for (let i = 0; i < columns; i++) {
+        drops.push(0);
+      }
     }
-    var str = "JavaScript Hacking Effect";
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const str = "JavaScript Hacking Effect";
     function draw() {
-      context.fillStyle = "rgba(0,0,0,0.05)";
+      context.fillStyle = "rgba(0,0,0,0.15)";
       context.fillRect(0, 0, W, H);
       context.font = "700 " + fontSize + "px Consolas";
-      context.fillStyle = "#00cc33";
-      for (var i = 0; i < columns; i++) {
-        var index = Math.floor(Math.random() * str.length);
-        var x = i * fontSize;
-        var y = drops[i] * fontSize;
+      context.fillStyle = "#006600";
+      for (let i = 0; i < columns; i++) {
+        let index = Math.floor(Math.random() * str.length);
+        let x = i * fontSize;
+        let y = drops[i] * fontSize;
         context.fillText(str[index], x, y);
         if (y >= canvas.height && Math.random() > 0.99) {
           drops[i] = 0;
         }
-        drops[i]++;
+        drops[i] += 2;
       }
     }
-    setInterval(draw, 35);
+    setInterval(draw, 20);
   </script>
 
-  <!-- LOADING EFFECT -->
   <script>
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
     let letter_count = 0;
@@ -104,7 +108,7 @@
       el.appendChild(span);
     }
 
-    setTimeout(write, 75);
+    setTimeout(write, 30);
     let incrementer = setTimeout(inc, 300);
 
     function write() {
@@ -113,7 +117,7 @@
         el.children[i].textContent = alphabet[c];
       }
       if (!finished) {
-        setTimeout(write, 75);
+        setTimeout(write, 30);
       }
     }
 
@@ -123,18 +127,9 @@
       letter_count++;
       if (letter_count >= word.length) {
         finished = true;
+        // No reset, animation stops here
       } else {
         setTimeout(inc, 300);
-      }
-    }
-
-    function reset() {
-      letter_count = 0;
-      finished = false;
-      setTimeout(inc, 300);
-      setTimeout(write, 75);
-      for (let span of el.children) {
-        span.classList.remove("glow");
       }
     }
   </script>
