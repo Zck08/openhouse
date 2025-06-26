@@ -11,69 +11,72 @@
   <link href="../../Grafica/image/logo.png" rel="apple-touch-icon">
 
   <style>
-    body {
+  body {
     margin: 0;
-    background: #f4f4f4;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
     overflow: hidden;
-    }
+    z-index: 0;
+  }
 
-    body::before {
+  body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/fondo.png');
+    height: 100vh;
+    width: 100vw;
+    background-image: url('{{ url_for("static", filename="images/fondo.jpg") }}');
     background-size: cover;
     background-position: center;
     filter: blur(8px);
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -1;
-    }
-        .form-container {
-      background: #6CC5A9;
-      padding: 40px;
-      border-radius: 1rem;
-      box-shadow: 0 5px 8px rgba(0,0,0,0.2), 0 9px 26px rgba(0,0,0,0.19);
-      width: 100%;
-      max-width: 500px;
-    }
+  }
 
-    .form-container h2 {
-      text-align: center;
-      color: #fff;
-      margin-bottom: 20px;
-    }
+  .form-container {
+    background: #6CC5A9;
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2), 0 9px 26px rgba(0,0,0,0.19);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+  }
 
-    .btnSubmit {
-      font-weight: 600;
-      width: 100%;
-      color: #282726;
-      background-color: #fff;
-      border: none;
-      border-radius: 1.5rem;
-      padding: 10px;
-    }
+  .form-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
 
-    .form-control {
-      border-radius: 0.75rem;
-    }
+  .btnSubmit {
+    font-weight: 600;
+    width: 100%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 10px;
+  }
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  </style>
+  .form-control {
+    border-radius: 0.75rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 1;
+    color: #333;
+  }
+</style>
 </head>
 
 <body>
