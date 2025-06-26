@@ -161,3 +161,269 @@ h1 {
 .redes-sociales img:hover {
   transform: scale(1.1);
 }
+
+
+
+
+
+
+
+   .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      position: relative;
+      background-color: #ffffff;
+      color: white;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+.card .label {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #717365;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label2 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #71C8E6;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label3 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #558CA0;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label4 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #722B7B;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label5 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #C7A01F;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label6 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #E16029;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label7 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #8B5CF6;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label8 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #EAB308;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label9 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #0CA77D;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label10 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #C9242A;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .label11 {
+  position: absolute;      
+  top: 50px;                 /* Controla qué tan arriba está. Cambia este valor para subir/bajar */
+  left: 50%;                 
+  transform: translateX(-50%);  
+  background: #558CA0;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;            
+  height: 60px;              
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .ciber {
+      background-image: url('../images/ciber.png'); /* reemplaza con una imagen similar */
+    }
+    .refri {
+      background-image: url('../images/refri.png'); /* reemplaza con una imagen similar */
+    }
+    .nube {
+      background-image: url('../images/nube.png'); /* reemplaza con una imagen similar */
+    }
+    .ia {
+      background-image: url('../images/ia.png'); /* reemplaza con una imagen similar */
+    }
+     .conta {
+      background-image: url('../images/conta.png'); /* reemplaza con una imagen similar */
+    }
+     .publi {
+      background-image: url('../images/publi.png'); /* reemplaza con una imagen similar */
+    }
+     .modas {
+      background-image: url('../images/modas.png'); /* reemplaza con una imagen similar */
+    }
+     .ejecutivo {
+      background-image: url('../images/ejecutivo.png'); /* reemplaza con una imagen similar */
+    }
+     .modelado {
+      background-image: url('../images/modelado.png'); /* reemplaza con una imagen similar */
+    }
+     .constru {
+      background-image: url('../images/constru.png'); /* reemplaza con una imagen similar */
+    }
+     .redes {
+      background-image: url('../images/redes.png'); /* reemplaza con una imagen similar */
+    }
