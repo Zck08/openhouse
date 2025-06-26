@@ -11,7 +11,7 @@
                 bottom: 0;
                 width: 100%;
                 height: 40px;
-                color: white;
+                color: #6CC5A9;
               }
               .login-logo{
                             position: relative;
@@ -28,7 +28,7 @@
                         .login-form-1{
                             padding: 9%;
                             background:#282726;
-                            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+                            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4), 0 18px 52px 0 rgba(0, 0, 0, 0.38);
                         }
                         .login-form-1 h3{
                             text-align: center;
@@ -37,8 +37,8 @@
                         }
                         .login-form-2{
                             padding: 9%;
-                            background: #25589e;
-                            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+                            background: #6CC5A9;
+                            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4), 0 18px 52px 0 rgba(0, 0, 0, 0.38);
                         }
                         .login-form-2 h3{
                             text-align: center;
