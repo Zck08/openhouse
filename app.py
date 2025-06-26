@@ -32,30 +32,22 @@ def enviar():
 
     asunto = "Confirmación de registro"
     mensaje = f"""
-    <html>
-      <body style="font-family: Arial, sans-serif; color: #333;">
-        <h2 style="color: #2E86C1;">Bienvenido/a a CTP Calle Blancos</h2>
-        <p>Gracias por registrarte. Estamos encantados de tenerte con nosotros.</p>
+
+        Bienvenido/a a CTP Calle Blancos
+        Gracias por registrarte. Estamos encantados de tenerte con nosotros.
     
-        <p><strong>Estos son tus datos de acceso:</strong><br>
-        <strong>Correo electrónico:</strong> {correo}<br>
-        <strong>Contraseña:</strong> {contrasena}</p>
+        Estos son tus datos de acceso:
+        Correo electrónico: {correo}
+        Contraseña: {contrasena}
     
-        <p>Para activar tu cuenta y confirmar tu registro, haz clic en el siguiente botón:</p>
+        Para activar tu cuenta y confirmar tu registro, haz clic en el siguiente botón:
     
-        <p style="text-align: center;">
-          <a href="https://www.ctpcalleblancos.site/confirmacion" 
-             style="background-color: #2E86C1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block;">
-             Confirmar registro
-          </a>
-        </p>
+        https://www.ctpcalleblancos.site/confirmacion
     
-        <p>Si no realizaste este registro, puedes ignorar este mensaje.</p>
+        Si no realizaste este registro, puedes ignorar este mensaje.
     
-        <p style="margin-top: 30px;">Saludos cordiales,<br>
-        <strong>Equipo de CTP Calle Blancos</strong></p>
-      </body>
-    </html>
+        Saludos cordiales,
+        Equipo de CTP Calle Blancos
     """
 
     msg = Message(asunto,
