@@ -32,19 +32,18 @@ def enviar():
 
     asunto = "Confirmación de registro"
     mensaje = f"""
-    Hola,
-
-    Gracias por registrarte.
-
-    Tus datos:
-    Correo: {correo}
-    Contraseña: {contrasena}
-
-    Por favor ingrese al siguiente enlace para confirmar sus credenciales:
-    www.ctpcalleblancos.site/confirmacion
-
-    Saludos,
-    CTP Calle Blancos
+    <html>
+    <body>
+        <p>Hola,</p>
+        <p>Gracias por registrarte.</p>
+        <p><strong>Tus datos:</strong><br>
+        Correo: {correo}<br>
+        Contraseña: {contrasena}</p>
+        <p>Por favor ingrese al siguiente enlace para confirmar sus credenciales:<br>
+        <a href="https://www.ctpcalleblancos.site/confirmacion">Confirmar credenciales</a></p>
+        <p>Saludos,<br>CTP Calle Blancos</p>
+    </body>
+    </html>
     """
 
     msg = Message(asunto,
