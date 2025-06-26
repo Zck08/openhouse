@@ -57,7 +57,7 @@ def enviar():
         <strong>Equipo de CTP Calle Blancos</strong></p>
       </body>
     </html>
-"""
+    """
 
     msg = Message(asunto,
                   sender=app.config['MAIL_USERNAME'],
