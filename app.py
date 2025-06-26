@@ -63,10 +63,11 @@ def enviar():
     try:
         mail.send(msg)
         flash('Correo enviado correctamente.')
+        return redirect('/verificacion')
     except Exception as e:
         flash(f'Error al enviar correo: {e}')
 
-    return redirect('/verificacion')
+    return redirect('/')
 
 if __name__ == '__main__':
     app.run(debug=True)
