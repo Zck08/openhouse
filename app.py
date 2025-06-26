@@ -29,6 +29,14 @@ def confirmacion():
 def verificacion():
     return render_template('verificacion.html')  # asegúrate que este archivo esté en la carpeta /templates
 
+@app.route('/nosotros')
+def nosotros():
+    return render_template('nosotros.html')  # asegúrate que este archivo esté en la carpeta /templates
+
+@app.route('/junta')
+def junta():
+    return render_template('junta.html')  # asegúrate que este archivo esté en la carpeta /templates
+
 @app.route('/enviar', methods=['POST'])
 def enviar():
     correo = request.form['ced']
