@@ -32,7 +32,6 @@ def enviar():
 
     asunto = "Confirmación de registro"
     mensaje = f"""
-    mensaje_html = f"""
     <html>
       <body style="font-family: Arial, sans-serif; color: #333;">
         <h2 style="color: #2E86C1;">Bienvenido/a a CTP Calle Blancos</h2>
