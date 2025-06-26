@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CTP Calle Blancos</title>
-  <link rel="stylesheet" href="redes.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/redes.css') }}">
 </head>
 
 <body>
   <!-- ENCABEZADO / NAVBAR -->
   <header class="navbar">
-    <img src="logo.png" alt="Logo CTP" class="logo">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
     <nav class="nav-menu">
       <a href="#">Inicio</a>
       <a href="#">Nosotros</a>
@@ -19,7 +19,7 @@
       <a href="#">Plan Nacional</a>
       <a href="#">Junta Administrativa</a>
       <a href="#">Contacto</a>
-      <a href="index.html" class="btn-admision">Admisión</a>
+      <a href="'index'" class="btn-admision">Admisión</a>
     </nav>
   </header>
 
@@ -35,17 +35,17 @@
       <a href="#" class="btn-especialidades">VER ESPECIALIDADES →</a>
     </div>
     <div class="imagen">
-      <img src="arriba.png" alt="Estudiante">
+      <img src="{{ url_for('static', filename='images/arriba.png') }}"  alt="Estudiante">
     </div>
   </section>
 
 
   <!-- SECCIÓN DE ESPACIO EN BLANCO CON IMAGEN -->
   <section class="espacio-blanco">
-    <img src="imagenc.png" alt="Imagen adicional">
+    <img src="{{ url_for('static', filename='images/imagenc.png') }}"  alt="Imagen adicional">
   </section>
   <section class="espacio-blanco">
-    <img src="imagenc2.png" alt="Imagen adicional">
+    <img src="{{ url_for('static', filename='images/imagenc2.png') }}"  alt="Imagen adicional">
   </section>
 
 
@@ -54,7 +54,7 @@
   <!-- PIE DE PÁGINA -->
   <footer class="footer">
     <div class="footer-container">
-      <img src="logo.png" alt="Logo CTP" class="footer-logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo CTP" class="footer-logo">
       <nav class="footer-nav">
         <a href="#">Inicio</a>
         <a href="#">Servicios Institucionales</a>
@@ -66,10 +66,11 @@
       </nav>
     </div>
     <hr class="footer-line">
-    <img src="imgf.png" alt="Imagen adicional">
+    <img src="{{ url_for('static', filename='images/imgf.png') }}" alt="Imagen adicional">
     <p class="footer-text">
       © 2025 | Todos los derechos reservados CTP Calle Blancos | SAComp Consultores
     </p>
   </footer>
 </body>
 </html>
+
