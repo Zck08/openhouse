@@ -37,6 +37,19 @@ def nosotros():
 def junta():
     return render_template('junta.html')  # asegúrate que este archivo esté en la carpeta /templates
 
+@app.route('/plan')
+def plan():
+    return render_template('plan.html')  # asegúrate que este archivo esté en la carpeta /templates
+
+@app.route('/servicios')
+def servicios():
+    return render_template('servicios.html')  # asegúrate que este archivo esté en la carpeta /templates
+
+@app.route('/contacto')
+def contacto():
+    return render_template('contacto.html')  # asegúrate que este archivo esté en la carpeta /templates
+
+
 @app.route('/enviar', methods=['POST'])
 def enviar():
     correo = request.form['ced']
