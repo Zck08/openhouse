@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Verificacion de cuenta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+  <link href="../../Grafica/image/logo.png" rel="icon">
+  <link href="../../Grafica/image/logo.png" rel="apple-touch-icon">
+
+  <style>
+    body {
+    margin: 0;
+    background: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+    }
+
+    body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('{{ url_for("static", filename="images/fondo.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    opacity: 0.5;
+    z-index: -1;
+    }
+        .form-container {
+      background: #6CC5A9;
+      padding: 40px;
+      border-radius: 1rem;
+      box-shadow: 0 5px 8px rgba(0,0,0,0.2), 0 9px 26px rgba(0,0,0,0.19);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .btnSubmit {
+      font-weight: 600;
+      width: 100%;
+      color: #282726;
+      background-color: #fff;
+      border: none;
+      border-radius: 1.5rem;
+      padding: 10px;
+    }
+
+    .form-control {
+      border-radius: 0.75rem;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Por favor complete el registro <br> verificando su correo y contraseña <br></h2>
+  </div>
+
+  <footer>
+    <a href="https://sacompcr.com" target="_blank" style="text-decoration:none;color:#333;">
+      &copy; SAComp Consultores Informáticos 2022
+    </a>
+  </footer>
+
+</body>
+</html>
+
