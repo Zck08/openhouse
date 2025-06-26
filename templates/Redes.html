@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="{{ url_for('static', filename='images/logo.png') }}" rel="icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTP Calle Blancos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/redes.css') }}">
+</head>
+
+<body>
+  <!-- ENCABEZADO / NAVBAR -->
+  <header class="navbar" id="Inicio">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo CTP" class="logo">
+    <nav class="nav-menu">
+      <a href="#Inicio">Inicio</a>
+      <a href="#Inicio">Nosotros</a>
+      <a href="#Especialidades">Servicios Institucionales</a>
+      <a href="#Especialidades">Especialidades</a>
+      <a href="#Inicio">Plan Nacional</a>
+      <a href="#Inicio">Junta Administrativa</a>
+      <a href="mailto:ctp.calleblanco@mep.go.cr">Contacto</a>
+      <a href="admision.html" class="btn-admision">Admisión</a>
+       
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <section class="contenido">
+    <div class="info">
+      <p class="etiqueta"><span class="check">✅</span> INNOVACIÓN, CONOCIMIENTOS Y VALORES</p>
+      <h1>
+        Modelo educativo de calidad, a nivel nacional, en cuanto a desarrollo cultural,
+        científico-tecnológico, económico, deportivo, social, ético y ambiental,
+        que sirva de referencia a otras instituciones
+      </h1>
+      <a href="#Especialidades" class="btn-especialidades">VER ESPECIALIDADES →</a>
+    </div>
+    <div class="imagen">
+      <img src="{{ url_for('static', filename='images/arriba.png') }}" alt="Estudiante">
+    </div>
+  </section>
+
+
+  <!-- SECCIÓN DE ESPACIO EN BLANCO CON IMAGEN -->
+  <section class="espacio-blanco">
+  <div class="container" id="Especialidades">
+    <h2>Conoce nuestras<br> <strong>Especialidades Técnicas</strong></h2>
+    <div class="grid">
+
+      <a href="admision.html" class="card ciber">
+        <div class="label">CI<br>BER</div>
+        <p>Ciberseguridad<br>Diurno - Nocturno</p>
+      </a>
+
+      <a href="admision.html" class="card refri">
+        <div class="label2">RE<br>FRI</div>
+        <p>Refrigeración y Aire Acondicionado<br>Diurno</p>
+      </a>
+
+      <a href="admision.html" class="card nube">
+        <div class="label3">LA<br>NUBE</div>
+        <p>Configuración y Administración de Servicios en la Nube<br>Diurno</p>
+      </a>
+
+      <a href="admision.html" class="card ia">
+        <div class="label4">IA</div>
+        <p>Inteligencia Artificial<br>Diurno - Nocturno</p>
+      </a>
+
+      <a href="admision.html" class="card conta">
+        <div class="label5">CON<br>TA</div>
+        <p>Contabilidad<br>Diurno - Nocturno</p>
+      </a>
+
+      <a href="admision.html" class="card publi">
+        <div class="label6">PU<br>BLI</div>
+        <p>Diseño Publicitario<br>Diurno - Nocturno</p>
+      </a>
+
+      <a href="admision.html" class="card modas">
+        <div class="label7">MO<br>DAS</div>
+        <p>Diseño y Confección de la Moda<br>Diurno</p>
+      </a>
+
+      <a href="admision.html" class="card ejecutivo">
+        <div class="label8">EJECU<br>TIVO</div>
+        <p>Ejecutivo Comercial y de Servicio al Cliente<br>Nocturno</p>
+      </a>
+
+      <a href="admision.html" class="card modelado">
+        <div class="label9">MO<br>DE<br>LA<br>DO</div>
+        <p>Dibujo y Modelado de Edificaciones<br>Diurno</p>
+      </a>
+
+      <a href="admision.html" class="card constru">
+        <div class="label10">CONS<br>TRU</div>
+        <p>Construcción civil<br>Diurno</p>
+      </a>
+
+      <a href="admision.html" class="card redes">
+        <div class="label11">RE<br>DES</div>
+        <p>Configuración y Soporte a Redes de Comunicación y Sistemas Operativos<br>Diurno</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="espacio-blanco">
+    <img src="{{ url_for('static', filename='images/imagenc2.png') }}" alt="Imagen adicional">
+  </section>
+
+ 
+
+
+  
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo CTP" class="footer-logo">
+      <nav class="footer-nav">
+        <a href="#Inicio">Inicio</a>
+        <a href="#Especialidades">Servicios Institucionales</a>
+        <a href="#Especialidades#">Especialidades</a>
+        <a href="#Inicio">Plan Nacional</a>
+        <a href="#Inicio">Junta Administrativa</a>
+        <a href="mailto:ctp.calleblanco@mep.go.cr">Empresa</a>
+       <a href="mailto:ctp.calleblanco@mep.go.cr">Contacto</a>
+      </nav>
+    </div>
+    <hr class="footer-line">
+    <img src="{{ url_for('static', filename='images/imgf.png') }}" alt="Imagen adicional">
+    <p class="footer-text">
+      © 2025 | Todos los derechos reservados CTP Calle Blancos | SAComp Consultores
+    </p>
+  </footer>
+</body>
+</html>
+
