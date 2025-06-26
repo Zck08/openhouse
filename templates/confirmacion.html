@@ -4,53 +4,53 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Hacking Matrix Rain Effect</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
+  <title>PELIGRO</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
 
-    body {
-      background: #111;
-      color: rgb(255, 255, 255);
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 8vw; /* Escala automáticamente con el ancho de pantalla */
-      text-shadow: 0 0 2vw rgba(23, 253, 2, 0.788);
-      height: 100vh;
-    }
+  body {
+    background: #111;
+    color: rgb(255, 255, 255);
+    font-family: Consolas, Courier, monospace;
+    text-shadow: 0 0 30px rgb(12, 204, 60);
+    height: 100%;
+  }
 
-    #loading {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 2;
-    }
+  #loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    font-size: clamp(24px, 10vw, 60px); /* ← ESCALA RESPONSIVA */
+  }
 
-    .glow {
-      color: rgb(255, 255, 255);
-      text-shadow: 0px 0px 10px (0, 177, 38);
-    }
+  .glow {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgb(12, 204, 60);
+  }
 
-    span {
-      display: inline-block;
-      padding: 0 10px;
-    }
+  span {
+    display: inline-block;
+    padding: 0 10px;
+  }
 
-    canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-  </style>
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+</style>
 </head>
 <body>
-  <div id="loading">!CUIDADO!<br>NO CONFIE EN TODOS LOS LINKS</div>
+  <div id="loading">NO CONFIE EN TODOS LOS LINKS</div>
   <canvas id="canvas"></canvas>
 
   <!-- MATRIX RAIN -->
@@ -104,7 +104,7 @@
       el.appendChild(span);
     }
 
-    setTimeout(write, 75);
+    setTimeout(write, 35);
     let incrementer = setTimeout(inc, 300);
 
     function write() {
@@ -113,7 +113,7 @@
         el.children[i].textContent = alphabet[c];
       }
       if (!finished) {
-        setTimeout(write, 75);
+        setTimeout(write, 35);
       }
     }
 
@@ -132,7 +132,7 @@
       letter_count = 0;
       finished = false;
       setTimeout(inc, 300);
-      setTimeout(write, 75);
+      setTimeout(write, 35);
       for (let span of el.children) {
         span.classList.remove("glow");
       }
