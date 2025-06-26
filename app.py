@@ -14,11 +14,11 @@ app.config['MAIL_PASSWORD'] = 'fgyrgjifauusfaix'  # contraseña de aplicación (
 mail = Mail(app)
 
 @app.route('/')
-def index():
+def inicio():
     return render_template('Redes.html')  # asegúrate que este archivo esté en la carpeta /templates
-    
-@app.route('/prueba')    
-def Redes():
+
+@app.route('/index')
+def index():
     return render_template('index.html')  # asegúrate que este archivo esté en la carpeta /templates
 
 
