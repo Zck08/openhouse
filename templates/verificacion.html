@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Verificacion de cuenta</title>
+  <title>Matrícula CTP Calle Blancos</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,82 +11,59 @@
   <link href="../../Grafica/image/logo.png" rel="apple-touch-icon">
 
   <style>
-  body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-  }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
 
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('{{ url_for("static", filename="images/fondo.jpg") }}');
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px);
-    opacity: 0.4;
-    z-index: -1;
-  }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-image: url('{{ url_for("static", filename="images/fondo.jpg") }}');
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+      opacity: 0.4;
+      z-index: -1;
+    }
 
-  .form-container {
-    background: #6CC5A9;
-    padding: 40px;
-    border-radius: 1rem;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.2), 0 9px 26px rgba(0,0,0,0.19);
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    z-index: 1;
-    position: relative;
-  }
-
-  .form-container h2 {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  .btnSubmit {
-    font-weight: 600;
-    width: 100%;
-    color: #282726;
-    background-color: #fff;
-    border: none;
-    border-radius: 1.5rem;
-    padding: 10px;
-  }
-
-  .form-control {
-    border-radius: 0.75rem;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 0.9rem;
-    z-index: 1;
-    color: #333;
-  }
-</style>
+    h2 {
+      font-size: 2rem;
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 1rem;
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8); /* sombra agregada */
+    }
+        footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      z-index: 1;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="form-container">
-    <h2>Por favor complete el registro <br> verificando su correo y contraseña <br></h2>
-  </div>
+  <h2>Por favor complete el registro <br> verificando su correo y contraseña</h2>
 
   <footer>
-    <a href="https://sacompcr.com" target="_blank" style="text-decoration:none;color:#333;">
+    <a href="https://sacompcr.com" target="_blank" style="text-decoration:none;color:#fff;">
       &copy; SAComp Consultores Informáticos 2022
     </a>
   </footer>
