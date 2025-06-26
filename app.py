@@ -25,6 +25,10 @@ def index():
 def confirmacion():
     return render_template('confirmacion.html')  # asegúrate que este archivo esté en la carpeta /templates
 
+@app.route('/verificacion')
+def verificacion():
+    return render_template('verificacion.html')  # asegúrate que este archivo esté en la carpeta /templates
+
 @app.route('/enviar', methods=['POST'])
 def enviar():
     correo = request.form['ced']
@@ -62,7 +66,7 @@ def enviar():
     except Exception as e:
         flash(f'Error al enviar correo: {e}')
 
-    return redirect('/')
+    return redirect('/verificacion')
 
 if __name__ == '__main__':
     app.run(debug=True)
